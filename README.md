@@ -25,7 +25,7 @@ ai-webui是一个基于浏览器操作的界面，旨在提供一个通用的AI�
 ### 2.1 克隆此项目到本地计算机
 
 ```bash
-git clone https://github.com/jasonaidm/ai-webui.git
+git clone https://github.com/jasonaidm/ai_webui.git
 ```
 
 ### 2.2 进入项目目录
@@ -69,17 +69,17 @@ python webui.py -c ./configs/segmentation_demo.yml
 ![segmentation示例](./assets/segmentation_demo.gif)
 
 2. 语音识别
+- 中英文等多语言识别
 ```bash
 python webui.py -c ./configs/asr_demo.yml
 ```
-- 中英文等多语言识别
 ![asr示例](./assets/asr_demo.gif)
 
 3. 语音合成
+- 中英文等多语言合成
 ```bash
 python webui.py -c ./configs/tts_demo.yml
 ```
-- 中英文等多语言合成
 ![tts示例](./assets/tts_demo.gif)
 
 
