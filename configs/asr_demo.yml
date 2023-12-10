@@ -1,0 +1,8 @@
+base: ['./configs/base.yml']
+
+asr_task:
+  switch: true
+  name: 语音识别
+  audio_asr_text: 
+    label: 'text'
+

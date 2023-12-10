@@ -1,0 +1,23 @@
+edge-tts==6.1.9
+ultralytics == 8.0.120
+einops
+av
+sentencepiece
+cpm_kernels
+edge-tts==6.1.9
+ffmpeg-python==0.2
+clip @ git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
+diffusers==0.21.4
+loguru
+numpy
+pandas
+opencv-python
+torchvision
+torch==2.1.1
+Pillow
+protobuf==4.23.4
+PyYAML
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git@6fdee8f2727f4506cfbbe553e23b895e27956588
+transformers
+gradio==3.39.0
+openai-whisper==20231117

@@ -1,0 +1,51 @@
+base: ['./configs/base.yml']
+
+video_convertor:
+  switch: true
+  name: 视频转换
+  video_upload_win: 
+    height: 400
+    width: null
+    autoplay: true
+  aspect_ratio_box: 
+    choices: ["16/9", "9/16", "4/3"]
+    value: "16/9"
+  move_up_rate: 
+    minimum: 0
+    maximum: 0.3
+    step: 0.05
+    value: 0.15
+  add_noice:
+    value: false
+  video_segment_length: 
+    minimum: 1 
+    maximum: 10
+    step: 1
+    value: 1
+  audio_speech_rate: 
+    minimum: 0.1
+    maximum: 1.
+    step: 0.1
+    value: 0.9
+  subtitling_recognition:
+    value: true
+  translate_engine: 
+    choices: ["chatglm"]
+    value: "chatglm"
+  subtitling_language: 
+    choices: ["英语", "普通话"]
+    value: "普通话"
+  collage_short_video:
+    value: true
+  voice_role:
+    choices: ["zh-CN-YunxiNeural", "zh-CN-YunjianNeural", "zh-CN-XiaoxiaoNeural", "zh-CN-XiaoyiNeural", 
+    "zh-CN-YunxiaNeural", "zh-CN-YunyangNeural", "zh-CN-liaoning-XiaobeiNeural", "zh-CN-shaanxi-XiaoniNeural"
+    ]
+    value: "zh-CN-YunxiNeural"
+  bgm_name:
+    choices: ["Paris", "illusionary_daytime", "time_back", "windy_hill"]
+    value: "Paris"
+  watermark:
+    choices: ["拉普拉丝", "川陀"]
+    value: "拉普拉丝"
+

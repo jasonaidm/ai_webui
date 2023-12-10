@@ -1,0 +1,28 @@
+base: ['./configs/base.yml']
+
+tts_task:
+  switch: true
+  name: 语音合成
+  output_dir: /data1/zjx/ai_webui/products/tts_outputs
+  model_type: 
+    choices: ["edge_tts", "so_vits_svc"]
+    value: "edge_tts"
+  tts_voice:
+    choices: ["zh-CN-YunxiNeural", "zh-CN-YunjianNeural", "zh-CN-XiaoxiaoNeural", "zh-CN-XiaoyiNeural", 
+    "zh-CN-YunxiaNeural", "zh-CN-YunyangNeural", "zh-CN-liaoning-XiaobeiNeural", "zh-CN-shaanxi-XiaoniNeural"]
+    value: "zh-CN-YunxiNeural"
+  tts_rate:
+    minimum: -100
+    maximum: 100  
+    value: 0
+    step: 5
+  tts_volume:
+    minimum: -100
+    maximum: 100  
+    value: 0
+    step: 5
+  tts_pitch:
+    minimum: -100
+    maximum: 100  
+    value: 0
+    step: 5

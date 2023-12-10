@@ -1,0 +1,7 @@
+base: ['./configs/base.yml']
+
+video_inpainter:
+  switch: true
+  name: 视频修复
+  interactive_state:
+    mask_save: false

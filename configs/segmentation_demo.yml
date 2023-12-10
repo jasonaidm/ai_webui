@@ -1,0 +1,7 @@
+base: ['./configs/base.yml']
+
+segmentation_task:
+  switch: true
+  name: 图像分割(SAM)
+
+
