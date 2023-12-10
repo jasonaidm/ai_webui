@@ -22,13 +22,13 @@ ai-webui是一个基于浏览器操作的界面，旨在提供一个通用的AI�
 
 要安装并使用AI-WebUI，请按照以下步骤操作：
 
-### 2.1 克隆此项目到本地计算机。
+### 2.1 克隆此项目到本地计算机
 
 ```bash
 git clone https://github.com/jasonaidm/ai-webui.git
 ```
 
-### 2.2 进入项目目录。
+### 2.2 进入项目目录
 
 ```bash
 cd ai-webui
@@ -39,7 +39,7 @@ conda create -n aiwebui python=3.11
 conda activate aiwebui
 ```
 
-### 2.4 安装所需的依赖项。
+### 2.4 安装所需的依赖项
 
 ```bash
 apt install ffmpeg -y 
@@ -125,7 +125,7 @@ python webui.py -c ./configs/webui_configs.yml
 由于模型加载耗时较长，建议在启动后的第一次推理时加载模型。
 可通过configs/base.yml配置文件的"init_model_when_start_server"来控制每一个AI模型的加载策略。
 
-## 5. 🔥模型文件列表
+## 🔥4. 模型文件
 正在上传至云盘，会尽快开放。
 
 ## 5. 贡献
