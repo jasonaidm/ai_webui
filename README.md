@@ -126,11 +126,62 @@ python webui.py -c ./configs/webui_configs.yml
 可通过configs/base.yml配置文件的"init_model_when_start_server"来控制每一个AI模型的加载策略。
 
 ## 🔥4. 模型文件
-正在上传至云盘，会尽快开放。
+### 4.1 模型文件下载
+| 模型 | 模型文件大小 | 小模型清单 | 下载链接 | 
+| :--- | :--- | :--- | :--- |
+| chatglm2-6b-int4 | 3.7G | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A)|
+| chatglm2-6b | 100 |  | [清华大学云盘](https://cloud.tsinghua.edu.cn/d/674208019e314311ab5c/?p=%2Fchatglm2-6b&mode=list) |
+| sam_vit_b | 358M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| sam_vit_h | 2.4G |  | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| FastSAM-s | 23M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| FastSAM-x | 138M |  | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| ProPainter | 150M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| raft-things | 20M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| recurrent_flow_completion | 19M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A ) | 
+| cutie | 134M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| samll | 461M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| large-v3 | 2.9G |  | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+
+- 百度网盘提取码为：zogk
+
+### 4.2 模型权重文件的目录结构
+```
+model_weights/
+├── chatglm
+│   └── chatglm2-6b-int4
+│       ├── config.json
+│       ├── configuration_chatglm.py
+│       ├── modeling_chatglm.py
+│       ├── pytorch_model.bin
+│       ├── quantization.py
+│       ├── tokenization_chatglm.py
+│       ├── tokenizer.model
+│       └── tokenizer_config.json
+├── fastsam
+│   ├── FastSAM-s.pt
+│   └── FastSAM-x.pt
+├── propainter
+│   ├── ProPainter.pth
+│   ├── cutie-base-mega.pth
+│   ├── raft-things.pth
+│   └── recurrent_flow_completion.pth
+├── sam
+│   ├── sam_vit_b.pth
+│   └── sam_vit_h.pth
+└── whisper
+    ├── large-v3.pt
+    └── small.pt
+```
+如果GPU资源小于8G，可能要小模型才能跑得起来；但小模型的效果不太理想，有条件的尽量跑大模型。
 
 ## 5. 贡献
 
 如果你有任何建议或功能请求，欢迎提出一个 issue。
 
-## 6. 鸣谢
-TO Write...
+## 6. 参考
+ - [Segment-ant-Track-Anything](https://github.com/z-x-yang/Segment-and-Track-Anything)
+ - [ProPainter](https://github.com/sczhou/ProPainter)
+ - [ChatGLM2-6B](https://github.com/THUDM/ChatGLM2-6B)
+ - [segment-anything](https://github.com/facebookresearch/segment-anything)
+ - [FastSAM](https://github.com/CASIA-IVA-Lab/FastSAM)
+ - [whisper](https://github.com/openai/whisper)

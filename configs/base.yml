@@ -5,7 +5,7 @@ server_port: 9090
 
 # AI模型相关参数
 ChatGLMHandler:
-  llm_model_path: model_weights/chatglm/chatglm2-6b-int4
+  llm_model_path: ./model_weights/chatglm/chatglm2-6b-int4
   num_gpus: 2
   trust_remote_code: true
   init_model_when_start_server: false
@@ -13,7 +13,7 @@ ChatGLMHandler:
 WhisperHandler:
   model_name: large-v3
   model_dir: ./model_weights/whisper
-  device: 'cuda:0'
+  device: 'cuda:1'
   init_model_when_start_server: false
   language_map: {
     "普通话": "zh",
@@ -24,23 +24,23 @@ GPTHandler:
   api_url: null
 
 FastSAMHandler:
-  fastsam_model_path: /mnt/d/ai_dev/FastSAM/weights/FastSAM-x.pt
+  fastsam_model_path: ./model_weights/fastsam/FastSAM-x.pt
   device: 'cuda:0'
 
 SAMHandler:
-  model_ckpt: /mnt/d/ai_dev/ProPainter/weights/sam_vit_h_4b8939.pth
+  model_ckpt: ./model_weights/sam/sam_vit_h.pth
   model_type: vit_h
-  device: 'cuda:1'
+  device: 'cuda:0'
 
 InpaintingHandler: 
-  propainter_ckpt: /mnt/d/ai_dev/ProPainter/weights/ProPainter.pth
-  raft_ckpt: /mnt/d/ai_dev/ProPainter/weights/raft-things.pth
-  flow_completion_ckpt: /mnt/d/ai_dev/ProPainter/weights/recurrent_flow_completion.pth
-  device: 'cuda:1'
+  propainter_ckpt: ./model_weights/ProPainter/ProPainter.pth
+  raft_ckpt: ./model_weights/ProPainter/raft-things.pth
+  flow_completion_ckpt: ./model_weights/ProPainter/recurrent_flow_completion.pth
+  device: 'cuda:0'
   use_half: true
 
 TrackerHandler:
-  cutie_ckpt: /mnt/d/ai_dev/ProPainter/weights/cutie-base-mega.pth
+  cutie_ckpt: ./model_weights/ProPainter/cutie-base-mega.pth
   device: 'cuda:0'
 
 
