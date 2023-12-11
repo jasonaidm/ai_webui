@@ -130,7 +130,7 @@ python webui.py -c ./configs/webui_configs.yml
 | 模型 | 模型文件大小 | 小模型清单 | 下载链接 | 
 | :--- | :--- | :--- | :--- |
 | chatglm2-6b-int4 | 3.7G | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A)|
-| chatglm2-6b | 100 |  | [清华大学云盘](https://cloud.tsinghua.edu.cn/d/674208019e314311ab5c/?p=%2Fchatglm2-6b&mode=list) |
+| chatglm2-6b | 12G |  | [清华大学云盘](https://cloud.tsinghua.edu.cn/d/674208019e314311ab5c/?p=%2Fchatglm2-6b&mode=list) |
 | sam_vit_b | 358M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
 | sam_vit_h | 2.4G |  | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
 | FastSAM-s | 23M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
