@@ -139,8 +139,8 @@ python webui.py -c ./configs/webui_configs.yml
 | raft-things | 20M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
 | recurrent_flow_completion | 19M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A ) | 
 | cutie | 134M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
-| samll | 461M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
-| large-v3 | 2.9G |  | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| whisper-samll | 461M | ✅ | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| whisper-large-v3 | 2.9G |  | [百度网盘](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
 
 - 百度网盘提取码为：zogk
 
