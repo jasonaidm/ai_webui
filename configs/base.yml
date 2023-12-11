@@ -33,14 +33,14 @@ SAMHandler:
   device: 'cuda:0'
 
 InpaintingHandler: 
-  propainter_ckpt: ./model_weights/ProPainter/ProPainter.pth
-  raft_ckpt: ./model_weights/ProPainter/raft-things.pth
-  flow_completion_ckpt: ./model_weights/ProPainter/recurrent_flow_completion.pth
+  propainter_ckpt: ./model_weights/propainter/ProPainter.pth
+  raft_ckpt: ./model_weights/propainter/raft-things.pth
+  flow_completion_ckpt: ./model_weights/propainter/recurrent_flow_completion.pth
   device: 'cuda:0'
   use_half: true
 
 TrackerHandler:
-  cutie_ckpt: ./model_weights/ProPainter/cutie-base-mega.pth
+  cutie_ckpt: ./model_weights/propainter/cutie-base-mega.pth
   device: 'cuda:0'
 
 

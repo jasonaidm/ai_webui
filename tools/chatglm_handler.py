@@ -11,12 +11,13 @@ class ChatGLMHandler(BaseHandler):
             self.num_gpus = min(self.num_gpus, len(os.environ['CUDA_VISIBLE_DEVICES']))
 
         self.trust_remote_code = self.handle_args.get('trust_remote_code', True)
+        self.device = self.handle_args.get('device', 'cuda:0')
 
     def init_model(self):
         if self.model is None:
             self.tokenizer = AutoTokenizer.from_pretrained(self.llm_model_path, trust_remote_code=True)
             if 'int' in os.path.basename(self.llm_model_path):
-                self.model = AutoModel.from_pretrained(self.llm_model_path, trust_remote_code=True).cuda()
+                self.model = AutoModel.from_pretrained(self.llm_model_path, trust_remote_code=True).to(self.device)
             else:
                 self.model = load_model_on_gpus(self.llm_model_path, num_gpus=self.num_gpus)
             self.model = self.model.eval()
