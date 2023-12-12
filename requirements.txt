@@ -21,3 +21,8 @@ segment-anything @ git+https://github.com/facebookresearch/segment-anything.git@
 transformers
 gradio==3.39.0
 openai-whisper==20231117
+anyconfig
+mdtex2html
+librosa
+moviepy
+omegaconf

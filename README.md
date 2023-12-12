@@ -31,7 +31,7 @@ git clone https://github.com/jasonaidm/ai_webui.git
 ### 2.2 进入项目目录
 
 ```bash
-cd ai-webui
+cd ai_webui
 ```
 ### 2.3 创建虚拟环境
 ```bash
