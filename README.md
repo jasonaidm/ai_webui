@@ -6,10 +6,10 @@
    </a>
 </div>
 
-<h1>AI-WEBUI: A universal web interface for AI creation</h1>
+<h1>AI-WEBUI: A universal web interface for AI creation, 一款好用的A工具</h1>
 
 
-⭐ If AI-WEBUI is helpful to your projects, please help star this repo. Thanks! 🤗
+⭐ 如果对你有帮助，麻烦给个star，感谢! 🤗
 </div>
 
 ## 🌟 1. 简介
@@ -108,9 +108,11 @@ python webui.py -c ./configs/video_inpainter_demo.yml
 - 音视频分离
 - 画面裁剪
 - 画面加噪
+- 抽帧取帧
 - 音频识别
 - 字幕翻译
 - 语音合成
+- bgm添加
 - 视频一键生成(外网视频无脑搬运)
 ```bash
 python webui.py -c ./configs/video_convertor_demo.yml
@@ -172,7 +174,7 @@ model_weights/
     ├── large-v3.pt
     └── small.pt
 ```
-如果GPU资源小于8G，可能要小模型才能跑得起来；但小模型的效果不太理想，有条件的尽量跑大模型。
+如果GPU显存小于8G，可能要小模型才能跑得起来；但小模型的效果不太理想，有条件的尽量跑大模型。
 
 ## 5. 贡献
 
