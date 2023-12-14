@@ -6,10 +6,10 @@
    </a>
 </div>
 
-<h1>AI-WEBUI: A universal web interface for AI creation, 一款好用的A工具</h1>
+<h1>AI-WEBUI: A universal web interface for AI creation, 一款好用的AI工具</h1>
 
 
-⭐ 如果对你有帮助，麻烦给个star，感谢! 🤗
+⭐ 如果对你有帮助，麻烦给个star哈，感谢! 🤗
 </div>
 
 ## 🌟 1. 简介
