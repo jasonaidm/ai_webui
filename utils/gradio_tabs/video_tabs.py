@@ -80,8 +80,8 @@ def restart(mask_save=False):
 def video_convertor_tab(video_clip_args, ai_handler):
     with gr.Tab(video_clip_args['name']):
         with gr.Row():
-            video_file = gr.Video(type="filepath", height= video_clip_args['video_upload_win']['height'], 
-                                    width= video_clip_args['video_upload_win']['width'], autoplay=True)
+            video_file = gr.Video(height= video_clip_args['video_upload_win']['height'], 
+                                  width= video_clip_args['video_upload_win']['width'], autoplay=True)
             srt_file = gr.components.File(label="上传字幕文件(非必选项)")
             with gr.Column():
                 with gr.Row():

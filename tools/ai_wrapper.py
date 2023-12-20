@@ -1,5 +1,6 @@
 import os
 from .chatglm_handler import ChatGLMHandler
+from .visualchat_handler import VisualChatHandler
 from .whisper_handler import WhisperHandler
 from .edgetts_handler import EdgeTTSHandler
 from .gpt_handler import GPTHandler
@@ -23,6 +24,7 @@ class AIWrapper:
         """
         self.args = args
         self.chatglm_handler = ChatGLMHandler(args)
+        self.visualchat_handler = VisualChatHandler(args)
         self.gpt_handler = GPTHandler(args)
         self.whisper_handler = WhisperHandler(args)
         self.edgetts_handler = EdgeTTSHandler(args)

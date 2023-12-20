@@ -26,3 +26,4 @@ mdtex2html
 librosa
 moviepy
 omegaconf
+SwissArmyTransformer>=0.4.4

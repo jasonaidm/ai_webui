@@ -6,7 +6,14 @@ server_port: 9090
 # AI模型相关参数
 ChatGLMHandler:
   llm_model_path: ./model_weights/chatglm/chatglm2-6b-int4
-  num_gpus: 2
+  num_gpus: 1
+  trust_remote_code: true
+  init_model_when_start_server: false
+
+VisualChatHandler:
+  model_path: /mnt/d/ai_dev/visualglm-6b/model_weights
+  device: 'cuda:1'
+  quant: 8
   trust_remote_code: true
   init_model_when_start_server: false
 

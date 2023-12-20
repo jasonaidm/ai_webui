@@ -12,7 +12,7 @@ from utils.gradio_tabs import *
 
 os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
 
-def launch_webui(yaml_file, device_ids=None, **kwargs):
+def launch_webui(yaml_file, device_ids=None, share=None, **kwargs):
     if device_ids is not None:
         os.environ['CUDA_VISIBLE_DEVICES'] = device_ids
     with open(yaml_file, 'rb') as f:
@@ -24,6 +24,7 @@ def launch_webui(yaml_file, device_ids=None, **kwargs):
     video_inpainter_args = args.get('video_inpainter', {})
     segmentation_args = args.get('segmentation_task', {})
     chat_args = args.get('chatbot', {})
+    visualchat_args = args.get('visualchat', {})
     asr_args = args.get('asr_task', {})
     tts_args = args.get('tts_task', {})
     
@@ -52,6 +53,9 @@ def launch_webui(yaml_file, device_ids=None, **kwargs):
         # 聊天问答
         if chat_args.get('switch'):
             chat_tab(chat_args, tts_args, ai_handler)
+        # 多模态问答
+        if visualchat_args.get('switch'):
+            visualchat_tab(visualchat_args, ai_handler)
 
         # 语音识别
         if asr_args.get('switch'):
@@ -61,15 +65,16 @@ def launch_webui(yaml_file, device_ids=None, **kwargs):
         if tts_args.get('switch'):
             tts_tab(tts_args, ai_handler)
 
-    web.queue().launch(server_name=args["server_name"], server_port=args["server_port"])
+    web.queue().launch(share=share, server_name=args["server_name"], server_port=args["server_port"])
 
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '-c', '-cfg', '--yaml_file', type=str, default='configs/webui_configs.yaml', 
+    parser.add_argument('-f', '-c', '-cfg', '--yaml_file', type=str, default='configs/webui_configs.yml', 
                         help='yaml config file'
                         )
     parser.add_argument('-d', '--device_ids', type=str, default=None, help='device ids')
+    parser.add_argument('-s', "--share", action="store_true", help='whether public url')
     opt = parser.parse_args()
     return opt
  

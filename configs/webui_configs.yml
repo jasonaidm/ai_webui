@@ -46,6 +46,13 @@ chatbot:
     choices: ["chatglm"]
     value: "chatglm"
 
+visualchat:
+  switch: true
+  name: 多模态问答
+  model_type: 
+    choices: ["visualglm"]
+    value: "visualglm"
+
 video_inpainter:
   switch: true
   name: 视频修复

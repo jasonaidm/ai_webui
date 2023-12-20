@@ -48,3 +48,39 @@ def chat_tab(chatbot_args, tts_args, ai_handler):
         
         
         text_emptyBtn.click(misc.reset_state, outputs=[chatbot, history, past_key_values], show_progress=True)
+
+
+def visualchat_tab(visualchat_args, ai_handler):
+    MAINTENANCE_NOTICE = 'Hint 1: If the app report "Something went wrong, connection error out", \
+        please turn off your proxy and retry.\nHint 2: If you upload a large size of image like 10MB, \
+            it may take some time to upload and process. Please be patient and wait.'
+    with gr.Tab(visualchat_args['name']):
+        with gr.Row():
+            with gr.Column(scale=2):
+                image_path = gr.Image(type="filepath", label="Image Prompt", value=None).style(height=480)
+            with gr.Column(scale=4):
+                chatbot = gr.Chatbot().style(height=480)
+        with gr.Row():
+            with gr.Column(scale=2, min_width=100):
+                max_length = gr.Slider(0, 4096, value=2048, step=1.0, label="Maximum length", interactive=True)
+                top_p = gr.Slider(0, 1, value=0.4, step=0.01, label="Top P", interactive=True)
+                temperature = gr.Slider(0, 1, value=0.8, step=0.01, label="Temperature", interactive=True)
+            with gr.Column(scale=4):
+                with gr.Box():
+                    with gr.Row():
+                        with gr.Column(scale=2):
+                            user_input = gr.Textbox(show_label=False, placeholder="Input...", lines=6).style(
+                                container=False)
+                        with gr.Column(scale=1, min_width=64):
+                            submitBtn = gr.Button("Submit", variant="primary")
+                            emptyBtn = gr.Button("Clear History")
+                    gr.Markdown('\n' + MAINTENANCE_NOTICE + '\n')
+        history = gr.State([])
+        
+        submitBtn.click(ai_handler.visualchat_handler.stream_chat, [user_input, image_path, chatbot, max_length, top_p, temperature, history], [chatbot, history],
+                        show_progress=True)
+        image_path.upload(ai_handler.visualchat_handler.stream_chat2, [image_path, chatbot, max_length, top_p, temperature], [chatbot, history],
+                        show_progress=True)
+        image_path.clear(misc.reset_state, outputs=[image_path, chatbot, history], show_progress=True)
+        submitBtn.click(misc.reset_user_input, [], [user_input])
+        emptyBtn.click(misc.reset_state, outputs=[image_path, chatbot, history], show_progress=True)
