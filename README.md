@@ -10,8 +10,9 @@
 
 
 ⭐ If it helps you, please give it a star, thank you! 🤗
-</div>
 [中文文档](./README_cn.md)
+</div>
+
 ## 🌟 1. Introduction
 ai-webui is a browser-based interface designed to provide a universal AI creation platform.
 <img align="center" src="assets/visualchat_demo.jpg" alt="drawing" width="768"/>
