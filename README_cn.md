@@ -14,6 +14,7 @@
 
 ## 🌟 1. 简介
 ai-webui是一个基于浏览器操作的界面，旨在提供一个通用的AI创作平台。
+<img align="center" src="assets/visualchat_demo.jpg" alt="drawing" width="768"/>
 <img align="center" src="assets/all_tabs_demo.gif" alt="drawing" width="768"/>
 
 本项目提供了图像分割、目标追踪、图像修复、语音识别、语音合成等基本功能，以及集成得到的聊天问答、视频翻译、视频去水印等有利于大幅提高短视频创作效率的高级功能。

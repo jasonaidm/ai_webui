@@ -1,0 +1,8 @@
+base: ['./configs/base.yml']
+
+visualchat:
+  switch: true
+  name: 多模态问答
+  model_type: 
+    choices: ["visualglm"]
+    value: "visualglm"

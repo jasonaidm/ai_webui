@@ -11,10 +11,10 @@
 
 ⭐ If it helps you, please give it a star, thank you! 🤗
 </div>
-
+[中文文档](./README_cn.md)
 ## 🌟 1. Introduction
 ai-webui is a browser-based interface designed to provide a universal AI creation platform.
-<img align="center" src="assets/all_tabs_demo.gif" alt="drawing" width="768"/>
+<img align="center" src="assets/visualchat_demo.jpg" alt="drawing" width="768"/>
 
 This project provides basic functionalities such as image segmentation, object tracking, image restoration, speech recognition, speech synthesis, as well as advanced features such as chatbot, video translation, and video watermark removal, which greatly improve the efficiency of short video creation.
 
@@ -130,18 +130,18 @@ You can control the loading strategy of each AI model through the "init_model_wh
 ### 4.1 Model File Downloads
 | Model | Model File Size | Small Model List | Download Link | 
 | :--- | :--- | :--- | :--- |
-| chatglm2-6b-int4 | 3.7G | ✅ | Baidu Netdisk|
-| chatglm2-6b | 12G |  | Tsinghua University Cloud Disk |
-| sam_vit_b | 358M | ✅ | Baidu Netdisk | 
-| sam_vit_h | 2.4G |  | Baidu Netdisk | 
-| FastSAM-s | 23M | ✅ | Baidu Netdisk | 
-| FastSAM-x | 138M |  | Baidu Netdisk | 
-| ProPainter | 150M | ✅ | Baidu Netdisk | 
-| raft-things | 20M | ✅ | Baidu Netdisk | 
-| recurrent_flow_completion | 19M | ✅ | Baidu Netdisk | 
-| cutie | 134M | ✅ | Baidu Netdisk | 
-| whisper-samll | 461M | ✅ | Baidu Netdisk | 
-| whisper-large-v3 | 2.9G |  | Baidu Netdisk |
+| chatglm2-6b-int4 | 3.7G | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A)|
+| chatglm2-6b | 12G |  | [Tsinghua University Cloud Disk](https://cloud.tsinghua.edu.cn/d/674208019e314311ab5c/?p=%2Fchatglm2-6b&mode=list)|
+| sam_vit_b | 358M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| sam_vit_h | 2.4G |  | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| FastSAM-s | 23M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| FastSAM-x | 138M |  | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| ProPainter | 150M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| raft-things | 20M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| recurrent_flow_completion | 19M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| cutie | 134M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| whisper-samll | 461M | ✅ | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) | 
+| whisper-large-v3 | 2.9G |  | [Baidu Netdisk](https://pan.baidu.com/s/1d-eRdvX-wRgm4XUJ24G30A) |
 
 - The extraction code for Baidu Netdisk is: zogk
 
